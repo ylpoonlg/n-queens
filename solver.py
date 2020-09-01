@@ -1,10 +1,10 @@
 import time
 class nQueens():
-	def __init__(self, n, ui, **kwargs):
+	def __init__(self, n, ui, t, **kwargs):
 		self.n = n
 		self.c = [0] * (15)
 		self.ui = ui
-		self.delay = 0.25
+		self.delay = t
 		self.solutions = []
 
 	def check(self, row):
